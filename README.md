@@ -1,6 +1,8 @@
 # Eclipsia: The Celestial Enigma 🌕 🌍 ☀️
 
-[Website](https://eclipsia-the-celestial-enigma.web.app/)
+Explore the mysteries of the cosmos from a unique perspective with the Astrophysicist Capybara. Dive into stellar stories that will take you beyond galaxies and discover the universe like you've never imagined before.
+
+Link to deployed project: [Eclipsia: The Celestial Enigma 🌕 🌍 ☀️](https://eclipsia-the-celestial-enigma.web.app/)
 
 ## Our history captured in a book ☄️
 Discover our eclipse history in a free book. Explore the celestial mysteries that have captivated humanity over time. Join us on this astronomical journey and download the story now.
