@@ -5,7 +5,7 @@
 ## Our history captured in a book ☄️
 Discover our eclipse history in a free book. Explore the celestial mysteries that have captivated humanity over time. Join us on this astronomical journey and download the story now.
 
-## bout the Team 🛸
+## About the Team 🛸
 Ratatouille Cosmic Creations is a team dedicated to finding innovative and practical solutions for space exploration. We are committed to collaborating with other teams and contributing to the advancement of space science and technology. Let's unite to achieve this!
 
 ### Projects:
