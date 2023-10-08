@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Chapter One: Hello, I'm Capy👋🏼</title>
+    <link rel="icon" type="image/x-icon" href="resources/images/favicon.png">
+
+    <style>
+        main {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden; /* Para ocultar cualquier desbordamiento horizontal */
+        }
+        /* Estilos para el div de video en la Section One */
+        .video-container {
+            position: relative;
+            max-width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+    
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        /* Estilo para la capa de fondo oscuro */
+        .dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Color de fondo oscuro con opacidad */
+        }
+        /*TypeJS*/
+        .typejs{
+            font-style: normal;
+        }
+    </style>
+    
+</head>
+<body>
+    <main>
+        <div class="video-container">
+            <video autoplay muted loop id="video-background">
+                <source src="resources/videos/video_03.mp4" type="video/mp4">
+                Tu navegador no admite la etiqueta de video.
+            </video>
+            <div class="dark-overlay"></div>
+            <div class=" vh-100 row d-flex justify-content-center align-items-end position-relative col-lg-12 fixed-bottom">
+                <div data-aos="fade-up" class="col-md-8 p-5 text-center text-light" style="z-index: 1;">
+                    <p class="fs-4"><span id="writing"></span></p>
+                    <a href="quiz_1_1.html" class="btn btn-outline-light rounded-pill btn-lg px-4" type="button">Quiz 📝</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--INITIALIZE AOS-->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Scripts Modal-->
+    <script>
+        // Obtén una referencia al botón por su ID
+        var mostrarModalBtn = document.getElementById('mostrarModalBtn');
+
+        // Obtén una referencia al modal por su ID
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+        // Agrega un evento de clic al botón
+        mostrarModalBtn.addEventListener('click', function() {
+            // Muestra el modal cuando se hace clic en el botón
+            myModal.show();
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        const capy_1_2 = new Typed('#writing', {
+            strings: [
+                '<i class="typejs">However, stars are the most recognized astronomical objects and represent the fundamental building blocks of galaxies. The age and distribution of stars within a galaxy trace the history, dynamics, and evolution of that galaxy.</i>',
+                '<i class="typejs">Moreover, they are responsible for producing and distributing heavy elements like carbon, nitrogen, and oxygen. Stellar formation occurs within dust clouds and is scattered throughout most galaxies.</i>',
+                '<i class="typejs">Considering that a planet also orbits in space and possesses specific characteristics, it is possible that it exists alongside stars and satellites, but they must be within the same Solar System. There is a phenomenon that arises when these three components interact:</i>',
+                '<i class="typejs">the Eclipse.</i>'
+                ],
+
+            //stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+            typeSpeed: 20, // Velocidad en mlisegundos para poner una letra,
+            startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+            backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+            smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+            shuffle: false, // Alterar el orden en el que escribe las palabras.
+            backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+            fadeOut: true,
+            loop: false, // Repetir el array de strings
+            loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+            showCursor: true, // Mostrar cursor palpitanto
+            cursorChar: '|', // Caracter para el cursor
+            contentType: 'html', // 'html' o 'null' para texto sin formato
+        });
+    </script>
+</body>
+</html>
